@@ -1,0 +1,4 @@
+Pos - 1
+Manager - 2
+Backend - 3
+DBA - 4

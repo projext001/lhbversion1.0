@@ -67,6 +67,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Views\Page\Manager\B3.aspx" />
+    <Content Include="Views\Page\Manager\B4.aspx" />
+    <Content Include="Views\Page\Manager\B2.aspx" />
+    <Content Include="Views\Shared\E2.aspx" />
+    <Content Include="Views\Shared\E1.aspx" />
+    <Content Include="Views\Page\Manager\B1.aspx" />
+    <Content Include="Views\Page\BackEnd\BackEndHome.aspx" />
+    <Content Include="Views\Page\DBAdmin\DBAdminHome.aspx" />
+    <Content Include="Views\Page\Manager\ManagerHome.aspx" />
+    <Content Include="Views\Page\POS\PosHome.aspx" />
+    <Content Include="Views\Page\Test.aspx" />
+    <Content Include="Views\Shared\0Main.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,10 +91,122 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="login.aspx" />
+    <Content Include="Views\Shared\error.aspx" />
+    <Content Include="Views\Shared\sheet1.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page\Manager\B3.aspx.cs">
+      <DependentUpon>B3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page\Manager\B3.aspx.designer.cs">
+      <DependentUpon>B3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page\Manager\B4.aspx.cs">
+      <DependentUpon>B4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page\Manager\B4.aspx.designer.cs">
+      <DependentUpon>B4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page\Manager\B2.aspx.cs">
+      <DependentUpon>B2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page\Manager\B2.aspx.designer.cs">
+      <DependentUpon>B2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\E2.aspx.cs">
+      <DependentUpon>E2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\E2.aspx.designer.cs">
+      <DependentUpon>E2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\E1.aspx.cs">
+      <DependentUpon>E1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\E1.aspx.designer.cs">
+      <DependentUpon>E1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page\Manager\B1.aspx.cs">
+      <DependentUpon>B1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page\Manager\B1.aspx.designer.cs">
+      <DependentUpon>B1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page\BackEnd\BackEndHome.aspx.cs">
+      <DependentUpon>BackEndHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page\BackEnd\BackEndHome.aspx.designer.cs">
+      <DependentUpon>BackEndHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page\DBAdmin\DBAdminHome.aspx.cs">
+      <DependentUpon>DBAdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page\DBAdmin\DBAdminHome.aspx.designer.cs">
+      <DependentUpon>DBAdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page\Manager\ManagerHome.aspx.cs">
+      <DependentUpon>ManagerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page\Manager\ManagerHome.aspx.designer.cs">
+      <DependentUpon>ManagerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page\POS\PosHome.aspx.cs">
+      <DependentUpon>PosHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page\POS\PosHome.aspx.designer.cs">
+      <DependentUpon>PosHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Page\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Page\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\0Main.Master.cs">
+      <DependentUpon>0Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\0Main.Master.designer.cs">
+      <DependentUpon>0Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Website Content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{3a7b375e-5c24-4aa6-bbf7-86b696ef3e57}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

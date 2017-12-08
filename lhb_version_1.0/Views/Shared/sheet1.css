@@ -1,0 +1,14 @@
+﻿body {
+}
+.menu {
+    background-color: cornflowerblue;
+    width: 24%;
+    position: absolute;
+    height: 100%
+}
+.system {
+    width: 74%;
+    position: absolute;
+    left: 25%;
+    height: 100%
+}
