@@ -64,13 +64,18 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebHelper\bin\Debug\WebHelper.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="App_Data\WebDB.mdf" />
+    <Content Include="App_Data\WebDB_log.ldf">
+      <DependentUpon>WebDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Website Content\XMLFile1.xml" />
+    <None Include="packages.config" />
     <Content Include="Views\Page\Manager\B3.aspx" />
     <Content Include="Views\Page\Manager\B4.aspx" />
     <Content Include="Views\Page\Manager\B2.aspx" />
@@ -199,15 +204,7 @@
       <DependentUpon>error.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Website Content\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
-      <Project>{3a7b375e-5c24-4aa6-bbf7-86b696ef3e57}</Project>
-      <Name>ClassLibrary1</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -6,5 +6,6 @@
     <div class="menu">
     </div>
     <div class="system">
+        <asp:Xml ID="Xml1" runat="server"></asp:Xml>
     </div>
 </asp:Content>

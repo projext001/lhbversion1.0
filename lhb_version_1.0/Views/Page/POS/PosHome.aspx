@@ -4,11 +4,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="background-color:cornflowerblue; width:24%;position:absolute;height:100%">
         <ul>
-            <li><a href="">NEW BILL</a></li>
+            <li><a href="../../Shared/E1.aspx">NEW BILL</a></li>
             <li><a href="">NEW CUSTOMER</a></li>
         </ul>
+        <div style="height:auto;width:100%;position:absolute;bottom:1%">
+
+        </div>
     </div>
     <div style="width:74%; position:absolute;left: 25%;height:100%">
-
         </div>
 </asp:Content>
