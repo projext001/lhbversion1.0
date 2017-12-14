@@ -23,6 +23,7 @@ namespace lhb_version_1._0.Views.Page.POS
                 int[] a = { 1, 3 };
                 Console.WriteLine("Acc no:  "+User_Ac);
                 //v.PageAcc(a,User_Ac);
+                Image1.ImageUrl = "";
             }
             else HttpContext.Current.Response.Redirect("~/Views/Shared/error.aspx");
         }

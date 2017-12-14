@@ -9,6 +9,8 @@
         </ul>
         <div style="height:auto;width:100%;position:absolute;bottom:1%">
 
+            <asp:Image ID="Image1" runat="server" />
+
         </div>
     </div>
     <div style="width:74%; position:absolute;left: 25%;height:100%">
