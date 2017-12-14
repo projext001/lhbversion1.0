@@ -1,15 +1,48 @@
 ﻿using System;
+using System.Web;
+
 namespace WebHelper
 {
-    class SecurityClass
+    public class SecurityClass
     {
-        public Boolean Encrypt()
+        string key = "jfkgotmyvhspcandxlrwebquiz";
+        public string Encrypt(string plainText)
         {
-            return false;
+            char[] chars = new char[plainText.ToLower().Length];
+
+            for (int i = 0; i < plainText.Length; i++)
+            {
+                if (plainText[i] == ' ')
+                {
+                    chars[i] = ' ';
+                }
+                else
+                {
+                    int j = plainText[i] - 97;
+                    chars[i] = key[j];
+                }
+            }
+
+            return new string(chars);
         }
-        public Boolean Decrypt()
+        public string Decrypt(string cipherText)
         {
-            return false;
+            char[] chars = new char[cipherText.ToLower().Length];
+
+            for (int i = 0; i < cipherText.Length; i++)
+            {
+                if (cipherText[i] == ' ')
+                {
+                    chars[i] = ' ';
+                }
+                else
+                {
+                    int j = key.IndexOf(cipherText[i]) - 97;
+                    chars[i] = (char)j;
+                }
+            }
+
+            return new string(chars);
         }
     }
 }

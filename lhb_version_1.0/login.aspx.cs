@@ -14,8 +14,10 @@ namespace lhb_version_1._0.Views.Page
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Validate v = new Validate();
             String id0 = name.Text.ToString();
             String key = pass.Text.ToString();
+            v.LoginSys(id0,key);
         }
     }
 }
